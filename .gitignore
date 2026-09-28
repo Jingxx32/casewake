@@ -20,6 +20,7 @@ build/
 coverage/
 
 # Browser test output
+artifacts/
 playwright-report/
 test-results/
 
