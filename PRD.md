@@ -1,4 +1,6 @@
-# QA Memory Agent — Product Requirements Document
+# Casewake — Product Requirements Document
+
+> **Direction update (September 28, 2026):** The user wants Casewake to test a configured, complete product using its PRD or design specification as the basis for a reviewable test-case library. The checkout scenario below is an earlier proposal and an isolated learning fixture, not the selected demo. See [the real-product direction](docs/real_product_direction.md). The draft requirements and acceptance criteria below need a full pass against this updated target before implementation.
 
 | Field | Value |
 | --- | --- |
@@ -7,7 +9,7 @@
 | Date | September 22, 2026 |
 | Primary project objective | Build a credible portfolio project for AI application engineering roles |
 | Secondary objective | Deliver a working hackathon submission |
-| Working product name | QA Memory Agent |
+| Working product name | Casewake |
 
 ## 1. Purpose and decision status
 
@@ -15,7 +17,7 @@ This document defines the proposed first release: its users, scope, behavior, ev
 
 **Confirmed goals:** prioritize employability, gain practical experience with agents, RAG, vector databases, and MCP, and participate in a Nebius/NVIDIA hackathon.
 
-**Proposed defaults:** a small e-commerce application, one main agent, structured executable test plans, and a focus on regression coverage gaps. These are planning recommendations, not previously approved product decisions.
+**Current direction:** test a configured complete product using its PRD or design specification as the requirements source. The earlier small e-commerce application is only a technical fixture. One main agent, structured executable plans, and a focus on regression coverage gaps remain proposed implementation choices.
 
 **Unvalidated assumptions:** target users need this workflow; historical QA knowledge improves outcomes; the candidate hackathon identified in Section 13 is the intended event. No user research, implementation benchmarks, or performance improvements have been established.
 
@@ -69,7 +71,7 @@ Recruit two or three developers or QA engineers for exploratory walkthroughs. Re
 
 ### Non-goals for the first release
 
-- Testing arbitrary websites, mobile apps, or production payment systems.
+- Testing arbitrary applications without a configured target, supported execution adapter, and controlled test environment; testing production payment systems.
 - Replacing a QA team or claiming complete coverage.
 - Unrestricted generated-code execution, autonomous application fixes, or self-healing assertions.
 - Guaranteed root-cause identification.
@@ -80,9 +82,9 @@ Recruit two or three developers or QA engineers for exploratory walkthroughs. Re
 
 ## 5. Reference scenario and user journey
 
-### Proposed demonstration application
+### Earlier checkout example (not selected as the demo)
 
-A small checkout application with explicit rules for discounts and gift cards. It must have resettable data, a correct implementation, and separately selectable versions containing documented injected defects. These versions and their provenance must be clearly labeled.
+The original proposal used a small checkout application with explicit rules for discounts and gift cards. It can remain an isolated technical fixture with resettable data and controlled faulty variants, but it is not the chosen real-product pilot. The intended pilot is described in [the real-product direction](docs/real_product_direction.md).
 
 Proposed rule fixture: an order totals 100 units, a discount reduces it to 80, and a gift card has a balance of 80. Discounts apply before gift-card redemption. Expected gift-card debit is 80; additional payment is zero. Currency handling and rounding rules must be specified before implementation.
 

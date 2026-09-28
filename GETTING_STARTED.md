@@ -1,14 +1,16 @@
 # QA Memory Agent: A Practical Getting-Started Guide
 
+> **Direction update (September 28, 2026):** This guide's checkout walkthrough is an optional learning fixture, not the selected Casewake demo. The current plan is to pilot on a configured real product using its requirements and existing tests. Follow [the real-product direction](docs/real_product_direction.md) for the next milestone. The checkout-specific steps below remain as a record of the original technical exercise.
+
 Written for this project on September 25, 2026.
 
-**Your first goal is to build a tiny checkout application and make one automated test pass on its correct version and fail on a deliberately faulty version.** Once that works, add AI planning, historical knowledge, and the product interface in separate steps.
+**Original checkout exercise:** build a tiny checkout application and make one automated test pass on its correct version and fail on a deliberately faulty version. This is no longer the next Casewake milestone. Follow the real-product direction linked above for work on a configured product.
 
 This guide assumes one developer working locally on macOS. The suggested business rules and implementation choices are starting defaults, not decisions already approved or implemented.
 
 ## 1. Understand where the project is today
 
-The folder currently contains planning documents, not a runnable application:
+At the time this guide was written, the folder contained planning documents rather than a runnable application:
 
 | Document | How to use it |
 | --- | --- |
@@ -16,7 +18,7 @@ The folder currently contains planning documents, not a runnable application:
 | [Original exploration](/Users/xujingxuan/Documents/Projects/ai-agent-project/agentic_rag_software_testing_assistant.md) | Background ideas, course connections, and possible extensions |
 | This guide | A concrete sequence for moving from the documents to an implementation |
 
-There is no existing server, dependency manifest, or startup command. The commands below are instructions for creating the foundation; they have not been executed as part of writing this guide.
+The repository now includes a minimal server, dependency manifest, and checkout calculation fixture. See [README.md](README.md) for commands that reflect the current implementation.
 
 Use the newer PRD as the planning baseline. In particular, its first release uses **one main agent**. You do not need to implement the older document's seven versions or its multi-agent stage. MCP and evaluation are part of the PRD's first release, even though they can be introduced after a simpler local prototype.
 

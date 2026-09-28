@@ -2,6 +2,8 @@
 
 Casewake is an AI-assisted QA project that uses current requirements, historical defects, and existing tests to propose and run evidence-backed regression checks.
 
+The intended first pilot is a configured real product, using its PRD or design specification as the source for reviewable test cases. See the [real-product direction](docs/real_product_direction.md). The checkout code below is an isolated learning fixture, not the selected product demo.
+
 The repository is at the first execution milestone. It contains a minimal demo server, a browser smoke test, and a pure checkout calculation in `demo_app/checkout.py`. The money and input rules are in [docs/checkout_rules.md](docs/checkout_rules.md). The browser page does not use the calculation yet. The agent, retrieval, MCP service, and reports are planned in [PRD.md](PRD.md) and sequenced in [GETTING_STARTED.md](GETTING_STARTED.md).
 
 ## Run locally
